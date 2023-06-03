@@ -23,7 +23,7 @@ export const BioSection = () => {
         </div>
       </div>
 
-      <div>
+      <div id="contact">
         <h3 className={classes.title}>Lets connect</h3>
         <div className={classes.linksContacts}>
           <Link>

@@ -7,7 +7,7 @@ export const WhatIDo = () => {
         <h4>What I do</h4>
         <p className={classes.para}>
           Build and maintain websites,{" "}
-          <span style={{ color: "var(--dark-green)" }}>frontend dev</span> My
+          <span style={{ color: "var(--dark-green)" }}>frontend dev.</span> My
           motto is Beauty and function in equal measure as priority.
         </p>
       </div>
