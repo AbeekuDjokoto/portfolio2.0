@@ -1,0 +1,65 @@
+.bioSection {
+  display: flex;
+  gap: 5rem;
+  .title {
+    color: var(--on-hover);
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 72px;
+    letter-spacing: 1px;
+  }
+  .bioInfo {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .headshot {
+    border: 5px solid var(--dark-green);
+    border-radius: 50%;
+    position: relative;
+    width: 165px;
+    height: 165px;
+    background-image: url("../../assets/images/headShotPhoto.JPG");
+    background-size: cover;
+    background-position: center;
+  }
+  .biography {
+    max-width: 490px;
+    width: 100%;
+    font-family: "Inter";
+    font-size: 1.1rem;
+    line-height: 32px;
+    letter-spacing: 0.014em;
+    color: #d6d6d6;
+  }
+  .linksContacts {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media (max-width: 909px) {
+  .bioSection {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    .bioInfo {
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      .title {
+        text-align: center;
+      }
+    }
+    .boxContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

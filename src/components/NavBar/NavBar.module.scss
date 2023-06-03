@@ -1,0 +1,123 @@
+.nav {
+  position: absolute;
+  top: 0;
+  padding: 17px 0px;
+  background-color: var(--black);
+  left: 0;
+  right: 0;
+
+  .logo {
+    display: none;
+  }
+
+  .links {
+    display: none;
+
+    a {
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 80px;
+      text-decoration: none;
+      color: var(--white);
+      transition: color 0.3s ease;
+
+      &:hover {
+        background-image: var(--mixed-colors);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 3.75rem;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        height: 30px;
+        width: 30px;
+        object-fit: fill;
+      }
+      figcaption {
+        font-family: "Inter";
+        line-height: 24px;
+        font-size: 0.8rem;
+      }
+    }
+
+    a {
+      font-family: "Inter";
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: none;
+      color: var(--mobile-color);
+      &:hover {
+        color: var(--on-hover);
+      }
+      &:active {
+        background-image: var(--mixed-colors);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    position: relative;
+    padding: 0;
+
+    .logo {
+      display: block;
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
+
+    .links {
+      display: flex;
+      list-style-type: none;
+      gap: 64px;
+
+      a {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 80px;
+        text-decoration: none;
+        color: var(--white);
+        transition: color 0.3s ease;
+
+        &:hover {
+          background-image: var(--mixed-colors);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .mobile {
+      display: none;
+      border: 1px solid green;
+    }
+  }
+}

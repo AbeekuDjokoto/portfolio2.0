@@ -1,0 +1,102 @@
+.root {
+  display: flex;
+  .header {
+    h4 {
+      font-family: "Sora";
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 72px;
+      letter-spacing: 1px;
+      color: var(--white);
+    }
+    .para {
+      max-width: 458px;
+      font-family: "Inter";
+      font-size: 1.1rem;
+      line-height: 32px;
+      letter-spacing: 0.014em;
+      color: #d6d6d6;
+    }
+  }
+
+  .boxContainer {
+    display: flex;
+    gap: 2rem;
+    .twoBoxes {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .oneBox {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .box {
+        background: rgba(31, 41, 55, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        p {
+          font-family: "Inter";
+          font-size: 0.8rem;
+          line-height: 26px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 1px;
+          color: rgba(239, 237, 232, 0.65);
+        }
+        h6 {
+          font-family: "Sora";
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 72px;
+          text-align: center;
+          color: #fafaf9;
+        }
+      }
+    }
+    .box {
+      background: rgba(31, 41, 55, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      p {
+        font-family: "Inter";
+        font-size: 0.8rem;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+        color: rgba(239, 237, 232, 0.65);
+      }
+      h6 {
+        font-family: "Sora";
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 72px;
+        text-align: center;
+        color: #fafaf9;
+      }
+    }
+  }
+}
+
+@media (max-width: 909px) {
+  .root {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    .boxContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
