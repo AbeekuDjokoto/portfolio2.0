@@ -1,0 +1,103 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  .title {
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    letter-spacing: 1px;
+  }
+  .showAllButton {
+    max-width: 200px;
+    width: 100%;
+    background: #9d9d9d;
+    border-radius: 6px;
+    color: var(--white);
+    padding: 20px 0;
+    cursor: pointer;
+    &:hover {
+      background: #757575;
+    }
+  }
+  .main {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    .img {
+      img {
+        border: 5px solid var(--dark-green);
+        border-radius: 5px;
+        position: relative;
+        width: 465px;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+    .projectMain {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      .project {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 24px;
+        align-items: center;
+        letter-spacing: 1px;
+        color: var(--secondary-grey);
+      }
+      .textContent {
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+        max-width: 656px;
+        width: 100%;
+        .projectTitle {
+          font-weight: 700;
+          font-size: 3rem;
+          line-height: 56px;
+          align-items: center;
+          letter-spacing: 1px;
+          transition: color 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            background-image: var(--mixed-colors);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .projectPara {
+          font-family: "Inter";
+          font-size: 1.1rem;
+          line-height: 32px;
+          align-items: center;
+          letter-spacing: 0.014em;
+          color: #d5d5d5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 909px) {
+  .root {
+    gap: 5.75rem;
+    .title {
+      text-align: center;
+    }
+    .main {
+      flex-wrap: wrap-reverse;
+      text-align: center;
+      justify-content: center;
+      .img {
+        margin: 0 auto;
+        img {
+          max-width: 456px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

@@ -12,15 +12,15 @@ export const NavBar = () => {
         <h3 className={classes.logo}>Abeeku</h3>
         <div className={classes.links}>
           <Link onClick={() => handleSkillsClick("home")}>Home</Link>
-          <Link to="/Projects">Projects</Link>
+          <Link onClick={() => handleSkillsClick("projects")}>Projects</Link>
           <Link onClick={() => handleSkillsClick("skills")}>Skills</Link>
           <Link to="/Recommendations">Recommendations</Link>
-          <Link onClick={() => handleSkillsClick("contact")}>Contact Us</Link>
+          <Link onClick={() => handleSkillsClick("contact")}>Reach Out</Link>
         </div>
         {/* on mobile */}
         <div className={classes.mobile}>
-          <Link to="/">Home</Link>
-          <Link to="/Projects">Projects</Link>
+          <Link onClick={() => handleSkillsClick("home")}>Home</Link>
+          <Link onClick={() => handleSkillsClick("projects")}>Projects</Link>
           <Link onClick={() => handleSkillsClick("skills")}>Skills</Link>
           <Link onClick={() => handleSkillsClick("contact")}>Contact</Link>
         </div>

@@ -1,4 +1,10 @@
-import { BioSection, NavBar, Skills, WhatIDo } from "../../components";
+import {
+  BioSection,
+  NavBar,
+  Projects,
+  Skills,
+  WhatIDo,
+} from "../../components";
 import classes from "./Home.module.scss";
 
 export const Home = () => {
@@ -13,6 +19,7 @@ export const Home = () => {
         <BioSection />
         <WhatIDo />
         <Skills />
+        <Projects />
       </main>
     </div>
   );
