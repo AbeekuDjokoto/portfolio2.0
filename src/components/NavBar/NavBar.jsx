@@ -14,7 +14,7 @@ export const NavBar = () => {
           <Link onClick={() => handleSkillsClick("home")}>Home</Link>
           <Link onClick={() => handleSkillsClick("projects")}>Projects</Link>
           <Link onClick={() => handleSkillsClick("skills")}>Skills</Link>
-          <Link to="/Recommendations">Recommendations</Link>
+          {/* <Link to="/Recommendations">Recommendations</Link> */}
           <Link onClick={() => handleSkillsClick("contact")}>Reach Out</Link>
         </div>
         {/* on mobile */}
