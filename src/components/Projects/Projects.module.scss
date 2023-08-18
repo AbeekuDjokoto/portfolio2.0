@@ -17,6 +17,7 @@
     color: var(--white);
     padding: 20px 0;
     cursor: pointer;
+    border: none;
     &:hover {
       background: #757575;
     }
@@ -98,6 +99,10 @@
           width: 90%;
         }
       }
+    }
+    .showAllButton {
+      display: flex;
+      align-items: center;
     }
   }
 }
