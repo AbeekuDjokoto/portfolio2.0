@@ -13,8 +13,9 @@ export const BioSection = () => {
           <div>
             <h3 className={classes.title}>Biography</h3>
             <p>
-              Getting Buff +1 for learning, Buff +2 for documentation and more
-              buff on managing team. Excited on{" "}
+              I'm an enthusiastic and detail-oriented Frontend Software Engineer
+              seeking an entry-level position and assisting in the timely
+              completion of projects. Excited on{" "}
               <span style={{ color: "var(--primary-blue)" }}>React</span>,{" "}
               <span style={{ color: "var(--light-blue)" }}>UX Research</span>{" "}
               and <span style={{ color: "var(--primary-green)" }}>Agile.</span>
@@ -26,10 +27,10 @@ export const BioSection = () => {
       <div id="contact">
         <h3 className={classes.title}>Lets connect</h3>
         <div className={classes.linksContacts}>
-          <Link>
-            <img src={twitter} alt="" />
+          <Link to="https://twitter.com/AbeekuDjokoto">
+            <img src={twitter} alt="Twitter Icon" />
           </Link>
-          <Link>
+          <Link to="https://linkedin.com/in/abeeku-djokoto">
             <img src={linkedIn} alt="" />
           </Link>
           <Link to="mailto:djokotoabeeku619@gmail.com">

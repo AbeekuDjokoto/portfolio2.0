@@ -3,9 +3,9 @@ import { skills as data } from "../../mocks/data";
 
 export const Skills = () => {
   return (
-    <div id="skills" className={classes.root}>
+    <div id="stack" className={classes.root}>
       <div>
-        <h4 className={classes.title}>Skills</h4>
+        <h4 className={classes.title}>Stack</h4>
         <p className={classes.para}>
           My technical{" "}
           <span style={{ color: "var(--dark-green)" }}>Skills</span>{" "}

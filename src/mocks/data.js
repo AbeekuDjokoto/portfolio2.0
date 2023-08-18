@@ -31,7 +31,7 @@ export const projects = [
     convenient and efficient manner. With Seedfi, you can unlock a
     world of lending possibilities and take advantage of tailored
     financial solutions tailored to your needs.`,
-    link: "https://seedfi-web.enyata.com/",
+    link: "https://app.theseedfi.com/",
   },
   {
     id: uuidv4(),
@@ -45,7 +45,7 @@ export const projects = [
     you can simplify your HR management processes and ensure that your
     workforce is effectively managed, from employee onboarding to
     performance management and everything in between`,
-    link: "https://hrm-v3.enyata.com/login",
+    link: "https://ghana-hrms.enyata.com/",
   },
   {
     id: uuidv4(),
